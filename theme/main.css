@@ -1,0 +1,27 @@
+.cTitle {
+    font-size: 3vw !important;
+    color: #555A5E !important;
+    font-weight: bold !important;
+}
+
+.cCalenderBox {
+	justify-content: center !important; 
+}
+
+.cTileImage {
+	border-radius: 20% !important;
+}
+
+.cInactiveTile {
+	background-color: gainsboro !important;
+} 
+
+.sapMPageHeader{
+
+    background-color:antiquewhite !important;
+    
+    }
+
+.cBackground {
+    background-color: lightcoral !important;
+}

@@ -1,0 +1,161 @@
+[{
+	"Username": "DOERINGER-C",
+	"Employee": "Christoph DÃ¶ringer",
+	"WorkingDateStart": "\/Date(1608508800000)\/",
+	"WorkingDateEnd": "\/Date(1609113600000)\/",
+	"TimesheetDataSet": {
+		"results": [{
+			"AppointmentId": "GqqdAAwFqmhNtIbbX4Ot526VgZQ=",
+			"Username": "DOERINGER-C",
+			"WorkingDateStart": "\/Date(1608505200000)\/",
+			"WorkingDateEnd": "\/Date(1608764399000)\/",
+			"CustomerId": "9",
+			"Customer": "Freudenberg PM Service",
+			"WorksiteId": "3",
+			"Worksite": "Home",
+			"WorksiteType": "Type12",
+			"Employee": "",
+			"AdditionalInformation": ""
+		}, {
+			"AppointmentId": "hCrKkC+fLo/oBxwnktotA6lVLgY=",
+			"Username": "DOERINGER-C",
+			"WorkingDateStart": "\/Date(1609110000000)\/",
+			"WorkingDateEnd": "\/Date(1609369199000)\/",
+			"CustomerId": "9",
+			"Customer": "Freudenberg PM Service",
+			"WorksiteId": "3",
+			"Worksite": "Home",
+			"WorksiteType": "Type12",
+			"Employee": "",
+			"AdditionalInformation": ""
+		}, {
+			"AppointmentId": "QhQzfDqQwd3d9SztboJ7oQhuKFM=",
+			"Username": "DOERINGER-C",
+			"WorkingDateStart": "\/Date(1608764400000)\/",
+			"WorkingDateEnd": "\/Date(1608807600000)\/",
+			"CustomerId": "1",
+			"Customer": "ABS GmbH",
+			"WorksiteId": "4",
+			"Worksite": "Holiday - Half day",
+			"WorksiteType": "Type09",
+			"Employee": "",
+			"AdditionalInformation": "Half day"
+		}, {
+			"AppointmentId": "NyuxnlxOQ2An99xbKfH+E+xc+Qw=",
+			"Username": "DOERINGER-C",
+			"WorkingDateStart": "\/Date(1608764400000)\/",
+			"WorkingDateEnd": "\/Date(1608850799000)\/",
+			"CustomerId": "",
+			"Customer": "Heiligabend",
+			"WorksiteId": "4",
+			"Worksite": "",
+			"WorksiteType": "Type09",
+			"Employee": "DOERINGER-C",
+			"AdditionalInformation": ""
+		}, {
+			"AppointmentId": "gTebRiJcGxMnqUPoWgvrHKkX+5g=",
+			"Username": "DOERINGER-C",
+			"WorkingDateStart": "\/Date(1608850800000)\/",
+			"WorkingDateEnd": "\/Date(1608937199000)\/",
+			"CustomerId": "",
+			"Customer": "1. Weihnachtstag",
+			"WorksiteId": "4",
+			"Worksite": "",
+			"WorksiteType": "Type09",
+			"Employee": "DOERINGER-C",
+			"AdditionalInformation": ""
+		}, {
+			"AppointmentId": "ikN0MfVtbu3RcHgrlMojO7lpD/Q=",
+			"Username": "DOERINGER-C",
+			"WorkingDateStart": "\/Date(1608937200000)\/",
+			"WorkingDateEnd": "\/Date(1609023599000)\/",
+			"CustomerId": "",
+			"Customer": "2. Weihnachtstag",
+			"WorksiteId": "4",
+			"Worksite": "",
+			"WorksiteType": "Type09",
+			"Employee": "DOERINGER-C",
+			"AdditionalInformation": ""
+		}]
+	}
+}, {
+	"Username": "ANDRAE-MA",
+	"Employee": "Mathias Andrae",
+	"WorkingDateStart": "\/Date(1608508800000)\/",
+	"WorkingDateEnd": "\/Date(1609113600000)\/",
+	"TimesheetDataSet": {
+		"results": [{
+			"AppointmentId": "f2djl6rjaAUYPaQ7Ps5gst3putw=",
+			"Username": "ANDRAE-MA",
+			"WorkingDateStart": "\/Date(1608505200000)\/",
+			"WorkingDateEnd": "\/Date(1608764399000)\/",
+			"CustomerId": "12",
+			"Customer": "Mektec Europe GmbH",
+			"WorksiteId": "3",
+			"Worksite": "Home",
+			"WorksiteType": "Type12",
+			"Employee": "",
+			"AdditionalInformation": ""
+		}, {
+			"AppointmentId": "//lxNUNosexiXVMmGSgvNogfYfU=",
+			"Username": "ANDRAE-MA",
+			"WorkingDateStart": "\/Date(1608764400000)\/",
+			"WorkingDateEnd": "\/Date(1608807600000)\/",
+			"CustomerId": "1",
+			"Customer": "ABS GmbH",
+			"WorksiteId": "4",
+			"Worksite": "Holiday - Half day",
+			"WorksiteType": "Type09",
+			"Employee": "",
+			"AdditionalInformation": "Half day"
+		}, {
+			"AppointmentId": "BthQAXVGo9k6TRS4pIzw70iom3U=",
+			"Username": "ANDRAE-MA",
+			"WorkingDateStart": "\/Date(1609110000000)\/",
+			"WorkingDateEnd": "\/Date(1609369199000)\/",
+			"CustomerId": "1",
+			"Customer": "ABS GmbH",
+			"WorksiteId": "4",
+			"Worksite": "Holiday",
+			"WorksiteType": "Type09",
+			"Employee": "",
+			"AdditionalInformation": ""
+		}, {
+			"AppointmentId": "NyuxnlxOQ2An99xbKfH+E+xc+Qw=",
+			"Username": "DOERINGER-C",
+			"WorkingDateStart": "\/Date(1608764400000)\/",
+			"WorkingDateEnd": "\/Date(1608850799000)\/",
+			"CustomerId": "",
+			"Customer": "Heiligabend",
+			"WorksiteId": "4",
+			"Worksite": "",
+			"WorksiteType": "Type09",
+			"Employee": "DOERINGER-C",
+			"AdditionalInformation": ""
+		}, {
+			"AppointmentId": "gTebRiJcGxMnqUPoWgvrHKkX+5g=",
+			"Username": "DOERINGER-C",
+			"WorkingDateStart": "\/Date(1608850800000)\/",
+			"WorkingDateEnd": "\/Date(1608937199000)\/",
+			"CustomerId": "",
+			"Customer": "1. Weihnachtstag",
+			"WorksiteId": "4",
+			"Worksite": "",
+			"WorksiteType": "Type09",
+			"Employee": "DOERINGER-C",
+			"AdditionalInformation": ""
+		}, {
+			"AppointmentId": "ikN0MfVtbu3RcHgrlMojO7lpD/Q=",
+			"Username": "DOERINGER-C",
+			"WorkingDateStart": "\/Date(1608937200000)\/",
+			"WorkingDateEnd": "\/Date(1609023599000)\/",
+			"CustomerId": "",
+			"Customer": "2. Weihnachtstag",
+			"WorksiteId": "4",
+			"Worksite": "",
+			"WorksiteType": "Type09",
+			"Employee": "DOERINGER-C",
+			"AdditionalInformation": ""
+		}]
+	}
+}]
