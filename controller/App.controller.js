@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/thirdparty/jquery","chris/calendar/controller/Base"],function(r,n){"use strict";return n.extend("chris.calendar.controller.App",{onInit:function(){}})});

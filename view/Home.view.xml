@@ -1,0 +1,128 @@
+<mvc:View xmlns="sap.m" xmlns:f="sap.f" xmlns:card="sap.f.cards" xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data" xmlns:grid="sap.ui.layout.cssgrid" xmlns:core="sap.ui.core" xmlns:table="sap.ui.table" controllerName="chris.calendar.controller..Home">
+	<Page title="{i18n>labelPageTitle}" floatingFooter="true" class="cBackground" >
+		<headerContent>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button type="Transparent" icon="theme/img/Questionmark.png" press="onDoPress"/>
+				<ToolbarSpacer/>
+				<Button type="Transparent" icon="theme/img/favicon.png" press="onLonelyPress" />
+				<ToolbarSpacer/>
+			</OverflowToolbar>
+		</headerContent>
+		<content>
+			<layout:Grid>
+				<f:Card id="tileJanuary" class="sapUiMediumMarginTop">
+					<f:header>
+						<card:Header title="Januar 2021" subtitle="ab 01.01.2021" iconSrc="theme/img/Januar.jpg" press="onTilePress">
+						<card:toolbar>
+							<core:Icon src="sap-icon://accept"/>
+						</card:toolbar>
+						</card:Header>
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileFebruary" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="Februar 2021" subtitle="ab 01.02.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileMarch" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="März 2021" subtitle="ab 01.03.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileApril" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="April 2021" subtitle="ab 01.04.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileMay" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="Mai 2021" subtitle="ab 01.05.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileJune" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="Juni 2021" subtitle="ab 01.06.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileJuly" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="Juli 2021" subtitle="ab 01.07.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileAugust" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="August 2021" subtitle="ab 01.08.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileSeptember" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="September 2021" subtitle="ab 01.09.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileOctober" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="Oktober 2021" subtitle="ab 01.10.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileNovember" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="November 2021" subtitle="ab 01.11.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+				<f:Card id="tileDecember" class="sapUiMediumMarginTop">
+
+					<f:header>
+						<card:Header title="Dezember 2021" subtitle="ab 01.12.2021" iconSrc="theme/img/Fragezeichen.jpg" press="onTilePress" />
+					</f:header>
+					<f:content>
+						<Image src="theme/img/loading3.jpg" width="100%" height="100%"></Image>
+					</f:content>
+				</f:Card>
+			</layout:Grid>
+		</content>
+	</Page>
+</mvc:View>

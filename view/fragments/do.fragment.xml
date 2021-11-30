@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns:absControl="chris.calendar.control">
+	<Dialog type="Message" title="Was hier so geht..." class="sapUiPopupWithPadding" afterClose="onEntryCancel">
+		<content>
+			<VBox width="100%">
+				<Image width="100%" src="theme/img/do.gif" />
+				<FormattedText width="100%" htmlText="{do>/HTML}"/>
+			</VBox>
+		</content>
+		<buttons>
+			<Button icon="sap-icon://accept" type="Transparent" press="onClosePress" />
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns:absControl="chris.calendar.control">
+	<Dialog type="Message" title="🍂 September 2021 🍂" class="sapUiPopupWithPadding" afterClose="onEntryCancel">
+		<content>
+			<VBox>
+				<FormattedText width="100%" htmlText="{sep>/HTML}" />
+				<HBox width="100%" justifyContent="Center">
+					<Image width="100%" src="theme/img/september.gif" />
+				</HBox>
+			</VBox>
+		</content>
+		<buttons>
+			<Button icon="sap-icon://accept" type="Transparent" press="onClosePress" />
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

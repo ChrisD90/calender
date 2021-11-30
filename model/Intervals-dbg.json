@@ -1,0 +1,9 @@
+{
+	"data": [{
+		"interval": "{i18n>intervalDaily}",
+		"key": "d"
+	}, {
+		"interval": "{i18n>intervalWeekly}",
+		"key": "w"
+	}]
+}

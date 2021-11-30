@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns:absControl="chris.calendar.control">
+	<Dialog type="Message" title="" class="sapUiPopupWithPadding" afterClose="onEntryCancel">
+		<content>
+			<VBox>
+				<Image width="100%" src="theme/img/feb03.gif" press="onFeb03OPress"/>
+				<Input placeholder="Geheimen Code eingeben..."/>
+			</VBox>
+		</content>
+		<buttons>
+			<Button text="Gott sind wir schlau..." icon="sap-icon://accept" type="Transparent" press="onFeb03YesPress" />
+			<Button text="What??" icon="sap-icon://question-mark" type="Transparent" press="onFeb01NoPress" />
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,109 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "chris.calendar",
+		"type": "application",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "1.1.0"
+		},
+		"dataSources": {
+		},
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": false
+		},
+		"supportedThemes": [
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.2.0",
+		"rootView": {
+			"viewName": "chris.calendar.view.App",
+			"id": "AppView",
+			"type": "XML"
+		},
+		"resourceRoots": {},
+		"resources": {
+			"css": [
+				{
+					"uri": "theme/main.css"
+				}
+			]
+		},
+		"dependencies": {
+			"minUI5Version": "1.68.1",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"": {
+				"dataSource": "timesheet",
+				"settings": {
+					"metadataUrlParams": {
+						"sap-documentation": "heading"
+					},
+					"defaultCountMode": "None"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"viewType": "XML",
+				"routerClass": "sap.m.routing.Router",
+				"viewPath": "chris.calendar.view",
+				"controlId": "idApp",
+				"controlAggregation": "pages",
+				"transition": "slide"
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "home",
+					"target": "home"
+				}
+			],
+			"targets": {
+				"home": {
+					"viewName": "Home",
+					"viewLevel": 1
+				}
+			}
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.2.0"
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/timesheet/webapp",
+		"_version": "1.2.0"
+	}
+}

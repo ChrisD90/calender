@@ -1,0 +1,135 @@
+<mvc:View xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns:ui="sap.ui.table" xmlns:core="sap.ui.core" controllerName="chris.calendar.controller.Home">
+	<Page id="Home.Page" showHeader="false" enableScrolling="true" class="sapUiContentPadding cBackground">
+		<content>
+			<VBox width="100%" alignItems="Center">
+				<Label text="❤ Jahreskalender 2021 ❤" class="cTitle sapUiMediumMarginBottom" />
+				<HBox width="100%" justifyContent="SpaceAround">
+					<Button icon="sap-icon://sys-help" text="Was tue ich hier??" type="Transparent" press="onDoPress"/>
+					<Button text="😢 Ich fühle mich einsam..." type="Transparent" press="onLonelyPress"/>
+				</HBox>
+			</VBox>
+			<VBox id="vBox" visible="false">
+				<HBox class="cCalenderBox">
+					<GenericTile id="tileJanuary" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="🍎 Januar 🍎" subheader="...ab 01.01.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile id="tileFebruary" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Februar" subheader="...ab 01.02.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</HBox>
+				<HBox class="cCalenderBox">
+					<GenericTile id="tileMarch" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="März" subheader="...ab 01.03.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile id="tileApril" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="April" subheader="...ab 01.04.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</HBox>
+				<HBox class="cCalenderBox">
+					<GenericTile id="tileMay" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Mai" subheader="...ab 01.05.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile id="tileJune" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Juni" subheader="...ab 01.06.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</HBox>
+				<HBox class="cCalenderBox">
+					<GenericTile id="tileJuly" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Juli" subheader="...ab 01.07.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile id="tileAugust" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="August" subheader="...ab 01.08.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</HBox>
+				<HBox class="cCalenderBox">
+					<GenericTile id="tileSeptember" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="September" subheader="...ab 01.09.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile id="tileOctober" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Oktober" subheader="...ab 01.10.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</HBox>
+				<HBox class="cCalenderBox">
+					<GenericTile id="tileNovember" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="November" subheader="...ab 01.11.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile id="tileDecember" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Dezember" subheader="...ab 01.12.2021" press="onTilePress" visible="true" state="Loading">
+						<tileContent>
+							<TileContent class="cTileContent">
+								<content>
+									<Image width="100%" height="100%" src="theme/img/inactive.gif" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</HBox>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

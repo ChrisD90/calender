@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="/ABSDE/TIMESHEET_SRV" xml:lang="de" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="TimesheetData" sap:content-version="1">
+				<Key><PropertyRef Name="AppointmentId"/></Key><Property Name="AppointmentId" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Hash-Wert" sap:sortable="false"/><Property Name="Username" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Benutzername" sap:sortable="false"/><Property Name="WorkingDateStart" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Zeitstempel" sap:sortable="false"/><Property Name="WorkingDateEnd" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Zeitstempel" sap:sortable="false"/><Property Name="CustomerId" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Debitor" sap:sortable="false"/><Property Name="Customer" Type="Edm.String" Nullable="false" MaxLength="100" sap:label="Kunde" sap:sortable="false"/><Property Name="WorksiteId" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="WORKSITE_ID" sap:sortable="false"/><Property Name="Worksite" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Arbeitsstätte" sap:sortable="false"/><Property Name="WorksiteType" Type="Edm.String" Nullable="false" MaxLength="6" sap:label="Typ" sap:sortable="false" sap:filterable="false"/><Property Name="Employee" Type="Edm.String" Nullable="false" MaxLength="90" sap:label="Mitarbeiter" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="AdditionalInformation" Type="Edm.String" Nullable="false" MaxLength="256" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="TimesheetUser" sap:content-version="1">
+				<Key><PropertyRef Name="Username"/><PropertyRef Name="WorkingDateStart"/><PropertyRef Name="WorkingDateEnd"/></Key><Property Name="Username" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Benutzername" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Employee" Type="Edm.String" Nullable="false" MaxLength="90" sap:label="Mitarbeiter" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="WorkingDateStart" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Datum" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="WorkingDateEnd" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Datum" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><NavigationProperty Name="TimesheetDataSet" Relationship="/ABSDE/TIMESHEET_SRV.TimesheetUserToData" FromRole="FromRole_TimesheetUserToData"
+					ToRole="ToRole_TimesheetUserToData"/></EntityType>
+			<EntityType Name="TimesheetCustomer" sap:content-version="1">
+				<Key><PropertyRef Name="CustomerId"/></Key><Property Name="CustomerId" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Debitor" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Customer" Type="Edm.String" Nullable="false" MaxLength="100" sap:label="Kunde" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="TimesheetWorksite" sap:content-version="1">
+				<Key><PropertyRef Name="WorksiteId"/><PropertyRef Name="Worksite"/></Key><Property Name="WorksiteId" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="WORKSITE_ID" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Worksite" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Arbeitsstätte" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="TimesheetUserPermission" sap:content-version="1">
+				<Key><PropertyRef Name="Username"/></Key><Property Name="Username" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Benutzername" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IsInternal" Type="Edm.Boolean" Nullable="false" sap:label="boolsche Variable (X=true, -=false, space=unknown)"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="UserService" sap:content-version="1">
+				<Key><PropertyRef Name="Username"/></Key><Property Name="Username" Type="Edm.String" Nullable="false" MaxLength="100" sap:label="Kunde" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="IsInternal" Type="Edm.Boolean" Nullable="false" sap:label="boolsche Variable (X=true, -=false, space=unknown)"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IsAdmin" Type="Edm.Boolean" Nullable="false" sap:label="boolsche Variable (X=true, -=false, space=unknown)"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<Association Name="TimesheetUserToData" sap:content-version="1"><End Type="/ABSDE/TIMESHEET_SRV.TimesheetUser" Multiplicity="1" Role="FromRole_TimesheetUserToData"/><End Type="/ABSDE/TIMESHEET_SRV.TimesheetData" Multiplicity="*" Role="ToRole_TimesheetUserToData"/></Association>
+			<EntityContainer Name="/ABSDE/TIMESHEET_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="TimesheetDataSet" EntityType="/ABSDE/TIMESHEET_SRV.TimesheetData" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="TimesheetUserSet" EntityType="/ABSDE/TIMESHEET_SRV.TimesheetUser" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="TimesheetCustomerSet" EntityType="/ABSDE/TIMESHEET_SRV.TimesheetCustomer" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="TimesheetWorksiteSet" EntityType="/ABSDE/TIMESHEET_SRV.TimesheetWorksite" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="TimesheetUserPermissionSet" EntityType="/ABSDE/TIMESHEET_SRV.TimesheetUserPermission" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="UserServiceSet" EntityType="/ABSDE/TIMESHEET_SRV.UserService" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<AssociationSet Name="TimesheetUserToDataSet" Association="/ABSDE/TIMESHEET_SRV.TimesheetUserToData" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="TimesheetUserSet" Role="FromRole_TimesheetUserToData"/><End EntitySet="TimesheetDataSet" Role="ToRole_TimesheetUserToData"/></AssociationSet>
+			</EntityContainer><atom:link rel="self" href="http://timesheet.abs-gmbh.de:8080/sap/opu/odata/ABSDE/TIMESHEET_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/><atom:link rel="latest-version" href="http://timesheet.abs-gmbh.de:8080/sap/opu/odata/ABSDE/TIMESHEET_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

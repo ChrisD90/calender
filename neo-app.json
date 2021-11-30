@@ -1,0 +1,49 @@
+{
+  "authenticationMethod": "saml",
+  "welcomeFile": "index.html",
+  "securityConstraints": [
+    {
+      "permission": "Benutzer",
+      "description": "ABS GmbH - Timesheet",
+      "protectedPaths": [
+        "/"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "path": "/services/userapi",
+      "target": {
+        "type": "service",
+        "name": "userapi"
+      }
+    },
+    {
+      "path": "/sap/opu/",
+      "target": {
+        "type": "destination",
+        "name": "abshana_ab1",
+        "entryPath": "/sap/opu/"
+      },
+      "description": "Timesheet OData Service"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    }
+  ]
+}
